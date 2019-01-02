@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CapteurDirection</string>
+
+    <string name="title_activity_my_camera">MyCamera</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_my_camera2">MyCamera2</string>
+</resources>

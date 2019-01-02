@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<!-- 显示视频预览的SurfaceView -->
+<SurfaceView
+    android:id="@+id/sView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+<RelativeLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/line"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/now"
+        android:id="@+id/imageView" />
+    <TextView
+        android:id="@+id/address_now_et"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="12dp"
+        android:textColor="#FFF"
+        android:textSize="18dp"
+        android:gravity="center"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/end"
+        android:layout_alignEnd="@+id/end" />
+    <TextView
+        android:id="@+id/qianfang"
+        android:text="前方："
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="#CF1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_above="@+id/qianfang_et"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <!-- 该EditText显示出的是最远点 -->
+    <TextView
+        android:id="@+id/qianfang_et"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:textColor="#FFF"
+        android:background="@drawable/lable6"
+
+        android:gravity="center"
+        android:layout_marginRight="110dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="160dp"
+        android:textSize="12dp"
+
+      />
+    <!-- 次近点 -->
+    <TextView
+        android:id="@+id/qianfang_et_2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:textColor="#FFF"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:background="@drawable/lable8"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="240dp"
+  />
+    <!-- 最近点 -->
+    <TextView
+        android:id="@+id/qianfang_et_4"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:textColor="#FFF"
+        android:gravity="center"
+        android:background="@drawable/lable5"
+        android:textSize="20dp"
+        android:layout_marginBottom="80dp"
+        android:layout_above="@+id/start"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/qianfang_l"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:background="@drawable/lable3"
+        android:textSize="12dp"
+        android:layout_alignTop="@+id/qianfang_r"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_alignBottom="@+id/qianfang_r" />
+    <TextView
+        android:id="@+id/qianfang_r"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:textColor="#000"
+        android:background="@drawable/lable3"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:layout_below="@+id/qianfang_et_2"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView" />
+    <Button
+        android:background="@drawable/lablestart"
+        android:id="@+id/start"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="开始导航"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginLeft="10dp"
+        />
+
+
+    <Button
+        android:background="@drawable/lablestart"
+        android:id="@+id/end"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="结束导航"
+        android:layout_below="@+id/qianfang_et_4"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginStart="30dp"/>
+
+</RelativeLayout>
+
+
+
+</RelativeLayout>

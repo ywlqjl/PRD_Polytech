@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/inventor"
+    >
+    <TextView
+        android:id="@+id/value_0"
+        android:text="与正北方向的夹角为："
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="30dp"
+        android:background="@drawable/lable3"
+        android:gravity="center"
+        android:layout_marginTop="153dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/value_0_et"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="30dp"
+        android:layout_below="@+id/value_0"
+        android:background="@drawable/lable5"
+        android:gravity="center"
+        />
+</RelativeLayout>
